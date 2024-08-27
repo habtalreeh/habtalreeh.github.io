@@ -6,7 +6,7 @@
         <title>HABT AL REEH REAL ESTATE MANAGEMENT</title>
         <meta name="description" content="Habt Al Reeh Real Estate Management, we are dedicated to providing exceptional real estate services that cater to your every need. With a commitment to excellence and a passion for property, we offer comprehensive solutions in property management, investment, and development. Property Management,  Real Estate Investment, Residential Development, Commercial Developments , Leasing Services, Real Estate Consulting. Habt Al Reeh Real Estate Management – Where Your Real Estate Success Begins.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="img/logo/logo-favicon.png">
         <!-- Place favicon.ico in the root directory -->
 
 		<!-- CSS here -->
@@ -21,6 +21,23 @@
         <link rel="stylesheet" href="css/default.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+
+        <script>
+            var isNS = (navigator.appName == "PN") ? 1 : 0;
+            if(navigator.appName == "PN") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+            function mischandler(){
+            return false;
+            }
+            function mousehandler(e){
+            var myevent = (isNS) ? e : event;
+            var eventbutton = (isNS) ? myevent.which : myevent.button;
+            if((eventbutton==2)||(eventbutton==3)) return false;
+            }
+            document.oncontextmenu = mischandler;
+            document.onmousedown = mousehandler;
+            document.onmouseup = mousehandler;
+            </script>
+
     </head>
     <body>
         <!-- Lines -->
@@ -37,12 +54,13 @@
                     <div class="row align-items-center">                                              
                         <div class="col-lg-4 col-md-4 d-none d-lg-block">
                            <div class="header-social">
-                                <span>
-                                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#" title="LinkedIn"><i class="fab fa-instagram"></i></a>               
-                                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                                    <a href="#" title="Twitter"><i class="fab fa-youtube"></i></a>
-                                   </span>                    
+                            <span>
+                                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" title="LinkedIn"><i class="fab fa-instagram"></i></a>               
+                                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" title="Twitter"><i class="fab fa-youtube"></i></a>
+                                <a href="#" title="Twitter"><i class="fab fa-whatsapp"></i></a>
+                               </span>                     
                                    <!--  /social media icon redux -->                               
                             </div>
                         </div>
@@ -55,12 +73,12 @@
                                         <span>Mon - Sat 8:00 - 18:00</span>
                                     </li>
                                     <li>
-                                        <i class="icon dripicons-mail"></i>
-                                        <span>info@example.com</span>
+                                        <i class="icon fal fa-envelope"></i>
+                                        <span>info@habtalreeh.com</span>
                                     </li>
                                     <li>
-                                        <i class="icon far fa-clock"></i>
-                                        <span>Mon - Sat 8:00 - 18:00</span>
+                                        <i class="icon fal fa-phone"></i>
+                                        <span>+971 2 555 6481</span>
                                     </li>
                                 </ul>
                             </div>
@@ -90,10 +108,10 @@
                                             <li><a href="about.html">About Us</a></li>
                                              <li><a href="projects.html">Portfolio</a></li>
                                             <li class="has-sub"> 
-                                                <a href="">Blog</a>
+                                                <a href="blog.html">Blog</a>
                                                 <ul>
-                                                    <li><a href="">Blog</a></li>
-                                                    <li><a href="">Blog Details</a></li>
+                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="blog.html">Blog Details</a></li>
 												</ul>
                                             </li>           
                                             <li class="has-sub"><a href="services.html">Service</a>
@@ -127,7 +145,7 @@
         <!-- offcanvas-area -->
                 <div class="offcanvas-menu">
                 <span class="menu-close"><i class="fas fa-times"></i></span>
-              <form role="search" method="get" id="searchform"   class="searchform" action="http://wordpress.zcube.in/xconsulta/">
+              <form role="search" method="get" id="searchform"   class="searchform" action="">
                                 <input type="text" name="s" id="search" value="" placeholder="Search"  />
                                 <button><i class="fa fa-search"></i></button>
                             </form>
@@ -138,8 +156,7 @@
                             <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.html">Home</a></li>
                             <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="about.html">About Us</a></li>
                             <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="services.html">Services</a></li>
-                             <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="pricing.html">Pricing </a></li>
-                             <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="team.html">Team </a></li>
+                             
                              
                              <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="projects.html">Gallery Study</a></li>
                              <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="blog.html">Blog</a></li>
@@ -149,8 +166,8 @@
                     
                     <div id="cssmenu2" class="menu-one-page-menu-container">
                         <ul id="menu-one-page-menu-1" class="menu">
-                            <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#home"><span>+8 12 3456897</span></a></li>
-                            <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#howitwork"><span>info@example.com</span></a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#home"><span>+971 2 555 6481</span></a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#howitwork"><span>info@habtalreeh.com</span></a></li>
                         </ul>
                     </div>                
             </div>
@@ -217,14 +234,13 @@
                                         <div class="card-header" id="headingOne">
                                             <h2 class="mb-0">
                                                 <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                    Breaking The Rules Using SQLite To Demo Web?
+                                                    What services do you offer?
                                                 </button>
                                             </h2>
                                         </div>
                                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample" style="">
                                             <div class="card-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                                We offer a range of real estate services, including residential and commercial property management, buying and selling assistance, leasing, property investment consulting, and eco-friendly real estate solutions. Our goal is to provide comprehensive support tailored to your real estate needs.
                                             </div>
                                         </div>
                                     </div>
@@ -232,14 +248,13 @@
                                         <div class="card-header" id="headingTwo">
                                             <h2 class="mb-0">
                                                 <button class="faq-btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                                    Monthly Web Development Update Pragmatic Releasing?
+                                                    Do you have a property search tool?
                                                 </button>
                                             </h2>
                                         </div>
                                         <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample" style="">
                                             <div class="card-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                                Yes, we offer an online property search tool on our website. You can filter properties by location, type, price range, and other criteria to find the perfect property for your needs.
                                             </div>
                                         </div>
                                     </div>
@@ -247,14 +262,13 @@
                                         <div class="card-header" id="headingThree">
                                             <h2 class="mb-0">
                                                 <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                    How To Use Underlined Text To Improve User Experience
+                                                    What should I consider when buying a property?
                                                 </button>
                                             </h2>
                                         </div>
                                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" style="">
                                             <div class="card-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                                When buying a property, consider factors such as location, budget, property type, amenities, and long-term investment potential. It’s also important to get a home inspection and review the property’s history.
                                             </div>
                                         </div>
                                     </div>
@@ -262,14 +276,13 @@
                                         <div class="card-header" id="headingFour">
                                             <h2 class="mb-0">
                                                 <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                    Understanding CSS Layout And The Block Formatting
+                                                    How can I list my property for sale?
                                                 </button>
                                             </h2>
                                         </div>
                                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                                             <div class="card-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                                To list your property for sale, contact us to schedule a consultation. We’ll assess your property, provide a market analysis, and create a customized marketing plan to help you achieve the best results.
                                             </div>
                                         </div>
                                     </div>
@@ -283,14 +296,13 @@
                                         <div class="card-header" id="headingfive">
                                             <h2 class="mb-0">
                                                 <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
-                                                    Breaking The Rules Using SQLite To Demo Web?
+                                                    What are the costs associated with buying a home?
                                                 </button>
                                             </h2>
                                         </div>
                                         <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordionExample1" style="">
                                             <div class="card-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                                Costs associated with buying a home typically include the down payment, closing costs (such as legal fees, title insurance, and appraisal fees), property taxes, and home insurance. We can provide a detailed breakdown of these costs during the buying process.
                                             </div>
                                         </div>
                                     </div>
@@ -298,14 +310,13 @@
                                         <div class="card-header" id="headingSix">
                                             <h2 class="mb-0">
                                                 <button class="faq-btn" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                                                    Monthly Web Development Update Pragmatic Releasing?
+                                                    How long does the home buying process take?
                                                 </button>
                                             </h2>
                                         </div>
                                         <div id="collapseSix" class="collapse show" aria-labelledby="headingSix" data-parent="#accordionExample" style="">
                                             <div class="card-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                                The home buying process can vary depending on several factors, including the market conditions and the complexity of the transaction. On average, it takes about 30 to 60 days from making an offer to closing on a property.
                                             </div>
                                         </div>
                                     </div>
@@ -313,14 +324,13 @@
                                         <div class="card-header" id="headingSeveen">
                                             <h2 class="mb-0">
                                                 <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSeveen" aria-expanded="false" aria-controls="collapseSeveen">
-                                                    How To Use Underlined Text To Improve User Experience
+                                                    How do I apply for a rental property? 
                                                 </button>
                                             </h2>
                                         </div>
                                         <div id="collapseSeveen" class="collapse" aria-labelledby="headingSeveen" data-parent="#accordionExample" style="">
                                             <div class="card-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                                To apply for a rental property, complete an online application form available on our website. You will need to provide information such as your rental history, employment details, and references. We may also require a credit check.
                                             </div>
                                         </div>
                                     </div>
@@ -328,14 +338,13 @@
                                         <div class="card-header" id="headingEighte">
                                             <h2 class="mb-0">
                                                 <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseEighte" aria-expanded="false" aria-controls="collapseEighte">
-                                                    Understanding CSS Layout And The Block Formatting
+                                                    What services are included in property management?
                                                 </button>
                                             </h2>
                                         </div>
                                         <div id="collapseEighte" class="collapse" aria-labelledby="headingEighte" data-parent="#accordionExample">
                                             <div class="card-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                                Our property management services include rent collection, property maintenance, tenant screening, lease management, and financial reporting. We handle all aspects of property management to ensure your property operates smoothly.
                                             </div>
                                         </div>
                                     </div>
@@ -374,18 +383,18 @@
                                     <ul>
                                     <li>
                                         <i class="icon fal fa-phone"></i>
-                                        <span>1800-121-3637<br>+91-7052-101-786</span>
+                                        <span>+971 2 555 6481<br>+971 55788 3994</span>
                                     </li>
                                    <li><i class="icon fal fa-envelope"></i>
-                                        <span>
-                                            <a href="mailto:info@example.com">info@example.com</a>
-                                       <br>
-                                       <a href="mailto:help@example.com">help@example.com</a>
-                                       </span>
-                                    </li>
-                                    <li>
-                                        <i class="icon fal fa-map-marker-check"></i>
-                                        <span>1247/Plot No. 39, 15th Phase,<br> LHB Colony, Kanpur</span>
+                                    <span>
+                                        <a href="mailto:info@habtalreeh.com">info@habtalreeh.com</a>
+                                   <br>
+                                   <a href="mailto:help@habtalreeh.com">enquiry@habtalreeh.com</a>
+                                   </span>
+                                </li>
+                                <li>
+                                    <i class="icon fal fa-map-marker-check"></i>
+                                    <span>M37, Musaffah<br> Abu Dhabi, United Arab Emirates</span>
                                     </li>
                                     
                                 </ul>
@@ -428,11 +437,11 @@
                             <div class="footer-widget mb-30">
                                 <div class="f-widget-title mb-30">
                                   <h2>Subscribe To Our Newsletter</h2>
-                                    <p>Quisque velit enim, ultricies ut viverra sit amet, blandit ut lectus. In ullamcorper dui.</p>
+                                    <p>By subscribing to our newsletter, helping you stay ahead in the market and make informed decisions.</p>
                                 </div>
                                 <div class="footer-link">
                                  <div class="subricbe p-relative" data-animation="fadeInDown" data-delay=".4s" >
-                                            <form action="news-mail.php" method="post" class="contact-form ">
+                                            <form action="" method="post" class="contact-form ">
                                              <input type="text" id="email2" name="email2"  class="header-input" placeholder="Your Email..." required>
                                             <button class="btn header-btn"><i class="far fa-chevron-right"></i></button>
                                             </form>
@@ -457,10 +466,11 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6">                         
-                              Copyright © 2021 DeHomes. All rights reserved.          
+                            Copyright © 2024 HABT AL REEH . All rights reserved.          
                         </div>
                         <div class="col-lg-6 text-right text-xl-right">                       
                            <div class="footer-social">                                    
+                                    <a href="#"><i class="fab fa-whatsapp"></i></a> 
                                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                                     <a href="#"><i class="fab fa-twitter"></i></a>
                                     <a href="#"><i class="fab fa-instagram"></i></a>
