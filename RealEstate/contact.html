@@ -297,7 +297,7 @@
                                
                             </div>
                              
-						<form action="mail.php" method="post" class="contact-form mt-30">
+						<form id="submit-form" action="" method="" class="contact-form mt-30">
 							<div class="row">
                             <div class="col-lg-6">
                                 <div class="contact-field p-relative c-name mb-30">                                    
@@ -337,6 +337,29 @@
                         
                     </form>
                             
+
+
+                    <script>
+                        $("#submit-form").submit((e)=>{
+                        e.preventDefault()
+                        $.ajax({
+                        url:"https://script.google.com/macros/s/AKfycbxz7rOdNEzluigfo0SBIH8lVTbbZA2niEiOtxGO83Gfgp9RBnTCxKlUtouLDVqDQW8B/exec",
+                        data:$("#submit-form").serialize(),
+                        method:"post",
+                        success:function (response){
+                        alert("Our HR will contact you shortly. Thank you!")
+                        window.location.reload()
+                        //window.location.href="https://google.com"
+                        },
+                        error:function (err){
+                        alert("Something Error")
+                        
+                        }
+                        })
+                        })
+                        </script>
+              
+
                             </div>
                         
 						</div>
